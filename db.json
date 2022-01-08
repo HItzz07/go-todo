@@ -1,0 +1,22 @@
+{
+  "Inprogress": [
+    { "Text": "Create new task", "Date": "01-08-2022 23:18:17" },
+    { "Text": "Adding another task", "Date": "01-08-2022 23:18:43" },
+    { "Text": "Adding fourth task", "Date": "01-08-2022 23:21:44" },
+    { "Text": "Now creating the fifth task", "Date": "01-08-2022 23:32:19" },
+    {
+      "Text": "I am using switch statement in golang",
+      "Date": "01-08-2022 23:40:38"
+    }
+  ],
+  "Completed": [
+    { "Text": "Task1", "Date": "Task2" },
+    { "Text": "Task1", "Date": "Task2" },
+    { "Text": "Create another new task", "Date": "01-08-2022 23:46:17" }
+  ],
+  "Forlater": [
+    { "Text": "Task1", "Date": "Task2" },
+    { "Text": "Task1", "Date": "Task2" },
+    { "Text": "And now the third task", "Date": "01-08-2022 23:19:12" }
+  ]
+}
