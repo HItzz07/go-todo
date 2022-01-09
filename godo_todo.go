@@ -13,7 +13,7 @@ import (
 
 //Creating a struct of type TODO
 type TODO struct {
-	Text string
+	Text string //We can use this later -> `json:"todo"`
 	Date string
 }
 
@@ -25,6 +25,13 @@ type DB struct {
 }
 
 func ReadDB(filename string) (db DB) {
+	//Check if DB exists or not
+	_, err := os.Stat(filename)
+	if err != nil {
+		fmt.Printf("Creating a new DB")
+		os.Create(filename)
+	}
+
 	//Reading
 	byteData, err := ioutil.ReadFile(filename)
 	// var db DB
@@ -139,6 +146,7 @@ func main() {
 	filename := "db.json"
 	fmt.Println("Creating a todo app using golang")
 	var io_db = ReadDB(filename)
+
 	// fmt.Println(io_db)
 	for {
 		fmt.Println("\n1. Create")
